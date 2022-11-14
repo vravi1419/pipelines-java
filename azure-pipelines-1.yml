@@ -4,12 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
-- Maven-Build
+- main
 
 pool:
   default
 steps:
-- task: Maven@1
+- task: Maven@3
   inputs:
     mavenPomFile: 'C://Users//ITSSBNG//Downloads//pom.xml'
     mavenOptions: '-Xmx3072m'
