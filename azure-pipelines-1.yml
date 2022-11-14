@@ -10,7 +10,7 @@ pool:
   default
 
 steps:
-- task: Maven@3
+- task: Maven@1
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
