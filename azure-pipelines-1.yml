@@ -7,7 +7,7 @@ trigger:
 - Maven-Build
 
 pool:
-  vmImage: 'ubuntu-latest'
+  default
 
 steps:
 - task: Maven@1
