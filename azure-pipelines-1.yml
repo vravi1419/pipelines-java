@@ -14,7 +14,7 @@ steps:
     mavenPomFile: 'C:/Users/ITSSBNG/Downloads/Java_Package/Java_Package/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
+    jdkVersionOption: '18.0.1.1'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     goals: 'package'
