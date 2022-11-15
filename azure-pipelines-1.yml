@@ -11,10 +11,10 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'C:/Users/ITSSBNG/Downloads/Java_Package/Java_Package/pom.xml'
+    mavenPomFile: 'D:\test_151122\maven-samples-master\pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '18.0.1.1'
+    jdkVersionOption: '18'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     goals: 'package'
