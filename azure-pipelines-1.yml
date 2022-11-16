@@ -11,7 +11,7 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'https://github.com/vravi1419/pipelines-java/blob/876f57469226d45f4600765b6764dc4139764cc5/pom.xml'
+    mavenPomFile: 'D:\test_151122\javaproj/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '18'
