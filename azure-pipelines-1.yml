@@ -18,3 +18,12 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     goals: 'package'
+    # Windows machine file copy
+      # Copy files to remote Windows machines
+- task: WindowsMachineFileCopy@2
+  inputs:
+    sourcePath: D:\test_151122\javaproj\target
+    machineNames: 192.168.1.4
+    #adminUserName: 
+    #adminPassword: $(passwordVariable)
+    targetPath: D:\apache-tomcat-10.0.21\webapps
