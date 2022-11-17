@@ -24,6 +24,6 @@ steps:
   inputs:
     sourcePath: D:\test_151122\javaproj\target\java-sample-1.0.0.jar
     machineNames: ITSSBNGNB55
-    #AdminUserName: ravi
-    #AdminPassword: Chenchu@1419
+    AdminUserName: ravi
+    AdminPassword: Chenchu@1419
     targetPath: D:\apache-tomcat-10.0.21\webapps
