@@ -11,7 +11,7 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'D:\test_151122\javaproj/pom.xml'
+    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '18'
@@ -24,6 +24,6 @@ steps:
   inputs:
     sourcePath: D:\test_151122\javaproj\target
     machineNames: 192.168.1.4
-    #AdminUserName: VRavi
-    #AdminPassword: 
+    AdminUserName: ravi
+    AdminPassword: Chenchu@1419
     targetPath: D:\apache-tomcat-10.0.21\webapps
