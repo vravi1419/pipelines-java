@@ -24,6 +24,6 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'D:\test_151122\javaproj\target\java-sample-1.0.0,jar\'
+    SourceFolder: 'D:\test_151122\javaproj\target\java-sample-1.0.0,jar'
     Contents: 'java-sample-1.0.0,jar'
     TargetFolder: 'D:\apache-tomcat-10.0.21\webapps\'
