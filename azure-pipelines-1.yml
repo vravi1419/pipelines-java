@@ -20,7 +20,10 @@ steps:
     #goals: 'package'
     # Windows machine file copy
       # Copy files to remote Windows machines
+
+
 - task: CopyFiles@2
   inputs:
-    sourceFolder: D:\test_151122\javaproj\target\rrr.jar.txt
-    targetFolder: D:\apache-tomcat-10.0.21\webapps\
+    SourceFolder: 'D:\test_151122\javaproj\target\'
+    Contents: 'rrr.jar.txt'
+    TargetFolder: 'D:\apache-tomcat-10.0.21\webapps\'
