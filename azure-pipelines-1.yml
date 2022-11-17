@@ -22,5 +22,5 @@ steps:
       # Copy files to remote Windows machines
 - task: CopyFiles@2
   inputs:
-    sourceFolder: D:\test_151122\javaproj\target\java-sample-1.0.0.jar
+    sourceFolder: D:\test_151122\javaproj\target\rrr.jar
     targetFolder: D:\apache-tomcat-10.0.21\webapps\
