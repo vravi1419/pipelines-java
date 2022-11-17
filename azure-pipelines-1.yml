@@ -20,10 +20,7 @@ steps:
     goals: 'package'
     # Windows machine file copy
       # Copy files to remote Windows machines
-- task: WindowsMachineFileCopy@2
+- task: CopyFiles@2
   inputs:
-    sourcePath: D:\test_151122\javaproj\target\java-sample-1.0.0.jar
-    machineNames: ITSSBNGNB55
-    AdminUserName: ITSSBNGNB55\ravi
-    AdminPassword: Chenchu@1419
-    targetPath: D:\apache-tomcat-10.0.21\webapps
+    sourceFolder: D:\test_151122\javaproj\target\java-sample-1.0.0.jar
+    targetFolder: D:\apache-tomcat-10.0.21\webapps
