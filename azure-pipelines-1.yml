@@ -9,18 +9,18 @@ trigger:
 pool:
   Default
 steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '18'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    goals: 'package'
+- #task: Maven@3
+  #inputs:
+    #mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
+    #mavenOptions: '-Xmx3072m'
+    #javaHomeOption: 'JDKVersion'
+    #jdkVersionOption: '18'
+    #jdkArchitectureOption: 'x64'
+    #publishJUnitResults: true
+    #goals: 'package'
     # Windows machine file copy
       # Copy files to remote Windows machines
 - task: CopyFiles@2
   inputs:
-    sourceFolder: D:\test_151122\javaproj\target\rrr.jar
+    sourceFolder: D:\test_151122\javaproj\target\rrr.jar.txt
     targetFolder: D:\apache-tomcat-10.0.21\webapps\
