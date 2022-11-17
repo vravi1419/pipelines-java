@@ -24,6 +24,6 @@ steps:
   inputs:
     sourcePath: D:\test_151122\javaproj\target
     machineNames: 192.168.1.4
-    AdminUserName: VRavi
-    AdminPassword: Chenchu@1419
+    #AdminUserName: VRavi
+    #AdminPassword: 
     targetPath: D:\apache-tomcat-10.0.21\webapps
