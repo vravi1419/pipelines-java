@@ -25,7 +25,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
+    script: 'D:\apache-tomcat-10.0.21\bin\shutdown.sh'
 
 - task: CopyFiles@2
   inputs:
@@ -36,4 +36,4 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
+    script: 'D:\apache-tomcat-10.0.21\bin\startup.sh'
