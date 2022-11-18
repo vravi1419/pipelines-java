@@ -34,6 +34,6 @@ steps:
     TargetFolder: 'D:\apache-tomcat-10.0.21\webapps\'
 
 
-- task: CmdLine@3
+- task: CmdLine@2
   inputs:
     script: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
