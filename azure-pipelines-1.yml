@@ -21,10 +21,10 @@ steps:
     # Windows machine file copy
       # Copy files to remote Windows machines
 
-- task: PowerShell@2
-  inputs:
-    filePath: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
 
+- task: CmdLine@2
+  inputs:
+    script: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
 
 - task: CopyFiles@2
   inputs:
@@ -32,6 +32,7 @@ steps:
     Contents: 'java-sample-1.0.0*.jar'
     TargetFolder: 'D:\apache-tomcat-10.0.21\webapps\'
 
-- task: PowerShell@2
+
+- task: CmdLine@2
   inputs:
-    filePath: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
+    script: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
