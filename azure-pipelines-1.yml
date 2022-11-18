@@ -36,4 +36,4 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'D:\apache-tomcat-10.0.21\bin\startup.sh'
+    script: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
