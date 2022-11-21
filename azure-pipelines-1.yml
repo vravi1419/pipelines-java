@@ -23,11 +23,7 @@ steps:
 
 - task: BatchScript@1
   inputs:
-        filename: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
-
-- task: BatchScript@1
-  inputs:
-        filename: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
+        filename: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat' -config D:\apache-tomcat-10.0.21\conf\server.xml
 
 - task: CopyFiles@2
   inputs:
@@ -37,4 +33,4 @@ steps:
 
 - task: BatchScript@1
   inputs:
-        filename: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
+        filename: 'D:\apache-tomcat-10.0.21\bin\startup.bat' -config D:\apache-tomcat-10.0.21\conf\server.xml
