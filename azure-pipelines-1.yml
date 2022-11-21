@@ -22,8 +22,6 @@ steps:
       # Copy files to remote Windows machines
 
 
-
-
 - task: BatchScript@1
   inputs:
         filename: 'D:\apache-tomcat-8.5.81\bin\shutdown.bat'
