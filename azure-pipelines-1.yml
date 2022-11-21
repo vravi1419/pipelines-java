@@ -21,6 +21,9 @@ steps:
     # Windows machine file copy
       # Copy files to remote Windows machines
 
+- task: BatchScript@1
+  inputs:
+        filename: 'D:\apache-tomcat-8.5.81\bin\startup.bat'
 
 - task: BatchScript@1
   inputs:
@@ -31,7 +34,6 @@ steps:
     SourceFolder: 'D:\test_151122\javaproj\target\'
     Contents: 'java-sample-1.0.0*.jar'
     TargetFolder: 'D:\apache-tomcat-8.5.81\webapps\'
-
 
 - task: BatchScript@1
   inputs:
