@@ -23,17 +23,18 @@ steps:
 
 
 
-- task: CmdLine@2
+
+- task: BatchScript@1
   inputs:
-    script: 'D:\apache-tomcat-8.5.81\bin\shutdown.bat'
+        filename: 'D:\apache-tomcat-8.5.81\bin\shutdown.bat'
 
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'D:\test_151122\javaproj\target\'
     Contents: 'java-sample-1.0.0*.jar'
-    TargetFolder: 'D:\apache-tomcat-10.0.21\webapps\'
+    TargetFolder: 'D:\apache-tomcat-8.5.81\webapps\'
 
 
-- task: CmdLine@2
+- task: BatchScript@1
   inputs:
-    script: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
+        filename: 'D:\apache-tomcat-8.5.81\bin\startup.bat'
