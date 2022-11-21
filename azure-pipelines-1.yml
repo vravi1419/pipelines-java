@@ -25,7 +25,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
+    script: 'C:\Users\ITSSBNG\Downloads\apache-tomcat-8.5.81\bin\shutdown.bat'
 
 - task: CopyFiles@2
   inputs:
