@@ -10,21 +10,21 @@ pool:
   Default
 
 steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '18'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    goals: 'package'
+#- task: Maven@3
+ # inputs:
+  #  mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
+   # mavenOptions: '-Xmx3072m'
+    #javaHomeOption: 'JDKVersion'
+    #jdkVersionOption: '18'
+    #jdkArchitectureOption: 'x64'
+    #publishJUnitResults: true
+    #goals: 'package'
     # Windows machine file copy
       # Copy files to remote Windows machines
 
-#- task: BatchScript@1
- # inputs:
-  #  filename: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
+- task: BatchScript@1
+  inputs:
+    filename: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
     #arguments: 'config D:\apache-tomcat-10.0.21\conf\server.xml'
     
 - task: CopyFiles@2
@@ -33,7 +33,7 @@ steps:
     Contents: 'java-sample-1.0.0*.jar'
     TargetFolder: 'D:\apache-tomcat-10.0.21\webapps\'
 
-#- task: BatchScript@1
- # inputs:
-  #  filename: 'D:\apache-tomcat-10.0.21\bin\startup.bat' 
+- task: BatchScript@1
+  inputs:
+    filename: 'D:\apache-tomcat-10.0.21\bin\startup.bat' 
     #arguments: 'config D:\apache-tomcat-10.0.21\conf\server.xml'
