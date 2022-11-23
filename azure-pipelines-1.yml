@@ -10,16 +10,16 @@ pool:
   Default
 
 steps:
-- task: Maven@4
-  inputs:
-    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
-    mavenVersionOption: 'Default'
-    mavenAuthenticateFeed: false
-    effectivePomSkip: false
-    sonarQubeRunAnalysis: false
+#- task: Maven@4
+#  inputs:
+#    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
+#    publishJUnitResults: true
+#    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+#    javaHomeOption: 'JDKVersion'
+#    mavenVersionOption: 'Default'
+#    mavenAuthenticateFeed: false
+#    effectivePomSkip: false
+#    sonarQubeRunAnalysis: false
 #- task: Maven@3
 #  inputs:
 #    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
