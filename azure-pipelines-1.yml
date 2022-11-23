@@ -10,12 +10,12 @@ pool:
   Default
 
 steps:
-#- task: Maven@4
-#  inputs:
-#    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
-#    publishJUnitResults: true
-#    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-#    javaHomeOption: 'JDKVersion'
+- task: Maven@4
+  inputs:
+    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: '18'
 #    mavenVersionOption: 'Default'
 #    mavenAuthenticateFeed: false
 #    effectivePomSkip: false
