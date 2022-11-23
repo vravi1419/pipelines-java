@@ -21,8 +21,7 @@ steps:
     publishJUnitResults: true
     goals: 'package' 
     Windows machine file copy
-    # Copy files to remote Windows machines
-
+    
 - task: BatchScript@1
   inputs:
     filename: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
