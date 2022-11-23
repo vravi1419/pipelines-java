@@ -20,7 +20,7 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     goals: 'package'
-    # Windows machine file copy
+    Windows machine file copy
       # Copy files to remote Windows machines
 
 - task: BatchScript@1
