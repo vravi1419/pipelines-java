@@ -11,15 +11,15 @@ pool:
   Default
 
 steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '18'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    goals: 'package'
+#- task: Maven@3
+#  inputs:
+#    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
+#    mavenOptions: '-Xmx3072m'
+#    javaHomeOption: 'JDKVersion'
+#    jdkVersionOption: '18'
+#    jdkArchitectureOption: 'x64'
+#    publishJUnitResults: true
+#    goals: 'package'
     # Windows machine file copy
       # Copy files to remote Windows machines
 
