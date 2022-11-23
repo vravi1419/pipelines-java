@@ -10,7 +10,6 @@ pool:
   Default
 
 steps:
--
 - task: Maven@3
   inputs:
     mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
