@@ -29,6 +29,9 @@ steps:
     filename: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
     #arguments: 'config D:\apache-tomcat-10.0.21\conf\server.xml'
     
+- task: PowerShell@2
+  inputs:
+    filePath: 'D:\JBoss-EAP\bin\shutdown.bat'
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'D:\test_151122\javaproj\target\'
@@ -39,3 +42,8 @@ steps:
   inputs:
     filename: 'D:\apache-tomcat-10.0.21\bin\startup.bat'
     #arguments: 'config D:\apache-tomcat-10.0.21\conf\server.xml'
+    
+- task: PowerShell@2
+  inputs:
+      filePath: 'D:\JBoss-EAP\bin\standalone.bat'
+    
