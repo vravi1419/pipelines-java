@@ -36,11 +36,11 @@ steps:
 #- task: PowerShell@2
 #  inputs:
 #    filePath: 'D:\JBoss-EAP\bin\shutdown.bat'
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: 'D:\test_151122\javaproj\target\'
-    Contents: 'java-sample-1.0.0*.jar'
-    TargetFolder: 'D:\apache-tomcat-10.0.21\webapps\'
+#- task: CopyFiles@2
+#  inputs:
+#    SourceFolder: 'D:\test_151122\javaproj\target\'
+#    Contents: 'java-sample-1.0.0*.jar'
+#    TargetFolder: 'D:\apache-tomcat-10.0.21\webapps\'
 
 #- task: BatchScript@1
 #  inputs:
