@@ -28,6 +28,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'D:\JBoss-EAP\bin\jboss-cli.bat --connect --controller=localhost:9990 --commands="read-attribute server-state"'
+
 #- task: BatchScript@1
 #  inputs:
 #    filename: 'D:\apache-tomcat-10.0.21\bin\shutdown.bat'
