@@ -22,7 +22,10 @@ steps:
     goals: 'package'
     # Windows machine file copy
       # Copy files to remote Windows machines
-
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'azuresonarqube'
+    scannerMode: 'Other'
 
 - task: PowerShell@2
   inputs:
