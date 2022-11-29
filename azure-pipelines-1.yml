@@ -16,6 +16,12 @@ steps:
   inputs:
     SonarQube: 'azuresonarqube'
     scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectKey=sonarqubedemo
+
 
 - task: Maven@3
   inputs:
