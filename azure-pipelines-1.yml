@@ -10,7 +10,13 @@ trigger:
 pool:
   Default
 
+
 steps:
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'azuresonarqube'
+    scannerMode: 'Other'
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
@@ -22,10 +28,10 @@ steps:
     goals: 'package'
     # Windows machine file copy
       # Copy files to remote Windows machines
-- task: SonarQubePrepare@5
+
+- task: SonarQubePublish@5
   inputs:
-    SonarQube: 'azuresonarqube'
-    scannerMode: 'Other'
+      pollingTimeoutSec: '300'
 
 - task: PowerShell@2
   inputs:
