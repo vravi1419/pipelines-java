@@ -34,6 +34,8 @@ steps:
          effectivePomSkip: false
          sonarQubeRunAnalysis: true
          sqMavenPluginVersionChoice: 'latest'
+         
+         goals: 'package'
 
 
     # Windows machine file copy
