@@ -26,7 +26,7 @@ steps:
     mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    codeCoverageToolOption: 'JaCoCo'
+    codeCoverageToolOption: 'none'
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
@@ -34,6 +34,19 @@ steps:
     sonarQubeRunAnalysis: true
     sqMavenPluginVersionChoice: 'latest'
     goals: 'package'
+- task: Maven@4
+  inputs:
+    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    testRunTitle: 'Test1'
+    codeCoverageToolOption: 'JaCoCo'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: true
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: true
+    sqMavenPluginVersionChoice: 'latest'
 - task: Maven@4
   inputs:
          mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
