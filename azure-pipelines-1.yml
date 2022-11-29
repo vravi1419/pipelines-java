@@ -14,6 +14,15 @@ pool:
 steps:
 - task: SonarQubePrepare@5
   inputs:
+    SonarQube: 'Test_demo'
+    scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectKey=test123
+- task: SonarQubePrepare@5
+  inputs:
     SonarQube: 'azuresonarqube'
     scannerMode: 'Other'
     extraProperties: |
@@ -57,21 +66,6 @@ steps:
     effectivePomSkip: false
     sonarQubeRunAnalysis: true
     sqMavenPluginVersionChoice: 'latest'
-- task: Maven@4
-  inputs:
-         mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
-         publishJUnitResults: true
-         testResultsFiles: '**/surefire-reports/TEST-*.xml'
-         codeCoverageToolOption: 'JaCoCo'
-         javaHomeOption: 'JDKVersion'
-         mavenVersionOption: 'Default'
-         mavenAuthenticateFeed: false
-         effectivePomSkip: false
-         sonarQubeRunAnalysis: true
-         sqMavenPluginVersionChoice: 'latest'
-         
-         goals: 'package'
-
 
     # Windows machine file copy
       # Copy files to remote Windows machines
