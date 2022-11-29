@@ -21,6 +21,16 @@ steps:
       # Put one key=value per line, example:
       # sonar.exclusions=**/*.bin
       sonar.projectKey=sonarqubedemo
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
+    mavenOptions: '-Xmx3072m'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '18'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: true
+    sonarQubeRunAnalysis: true
+    goals: 'package'
 - task: Maven@4
   inputs:
     mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
