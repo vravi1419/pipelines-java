@@ -15,7 +15,7 @@ steps:
 
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'azuresonarqube'
+    SonarQube: 'Sonar_neg_again'
     scannerMode: 'Other'
     extraProperties: |
       # Additional properties that will be passed to the scanner, 
@@ -24,7 +24,7 @@ steps:
       sonar.projectKey=sonarqubedemo
 - task: Maven@3
   inputs:
-    mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
+    mavenPomFile: 'D:\test_151122\maven-samples-master\pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '18'
