@@ -13,6 +13,11 @@ steps:
   inputs:
     SonarQube: 'sonardemo'
     scannerMode: 'Other'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner,
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.projectKey=First_Public_First_AYTNs9QBZPlfglA_UKnh
 - task: Maven@3
   inputs:
     mavenPomFile: 'D:\Demo_new\pom.xml'
