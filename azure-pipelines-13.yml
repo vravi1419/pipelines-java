@@ -21,7 +21,7 @@ steps:
     jdkVersionOption: '18'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
-    goals: 'package'
+    goals: 'clean package'
     # Windows machine file copy
     # Copy files to remote Windows machines
 
