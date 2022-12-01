@@ -25,3 +25,6 @@ steps:
     # Windows machine file copy
     # Copy files to remote Windows machines
 
+- task: SonarQubePublish@5
+  inputs:
+    pollingTimeoutSec: '300'
