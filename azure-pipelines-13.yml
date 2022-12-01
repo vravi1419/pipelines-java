@@ -9,6 +9,10 @@ trigger:
 pool:
   Default
 steps:
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'sonardemo'
+    scannerMode: 'Other'
 - task: Maven@3
   inputs:
     mavenPomFile: 'D:\test_151122\javaproj\pom.xml'
