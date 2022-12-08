@@ -14,9 +14,9 @@ steps:
   inputs:
     SonarQube: 'New-Demo'
     scannerMode: 'Other'
-- task: PowerShell@2
-  inputs:
-    filePath: 'file:///C:/Users/ITSSBNG/Documents/jboss_deployment.ps1'
+#- task: PowerShell@2
+#  inputs:
+#    filePath: 'file:///C:/Users/ITSSBNG/Documents/jboss_deployment.ps1'
 - task: Maven@3
   inputs:
     mavenPomFile: 'D:\Demo_new\pom.xml'
